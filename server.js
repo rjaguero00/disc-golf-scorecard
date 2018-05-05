@@ -6,6 +6,8 @@ var bodyParser = require('body-parser')
 var env        = require('dotenv').load()
 var exphbs     = require('express-handlebars')
 
+// Serve static content for the app from the "public" directory in the application directory.
+app.use(express.static("./app/public"));
 
 //For BodyParser
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -25,7 +27,7 @@ app.set('view engine', '.hbs');
 
 
 app.get('/', function(req, res){
-  res.send('Welcome to Passport with Sequelize');
+  res.render("signin");
 });
 
 
