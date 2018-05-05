@@ -14,7 +14,7 @@ body {
 .container {
     margin: 0 auto;
 }
-h2 {
+h2, label {
     color: white;
 }
 img {
@@ -24,11 +24,17 @@ img {
 form {
     text-align: center;
 }
-.form-control {
-    width: 50%;
+input {
+    line-height: normal;
+    width: 75%;
+    text-align: center;
+    margin: 5px;
+}
+.password, email {
     text-align: center;
 }
 .btn {
+    margin-top: 5px;
     margin-bottom: 5px;
     background-color: orangered;
 }
