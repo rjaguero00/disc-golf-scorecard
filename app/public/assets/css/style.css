@@ -14,7 +14,7 @@ body {
 .container {
     margin: 0 auto;
 }
-h2, label {
+h2, h3, label {
     color: white;
 }
 img {
@@ -32,6 +32,20 @@ input {
 }
 .password, email {
     text-align: center;
+}
+#par {
+    background-color: orangered;
+    padding: 5px;
+    border-radius: 10px;
+}
+#previous {
+    margin-right: 10px;
+}
+#next {
+    margin-left: 10px;
+}
+#progress {
+    color: white;
 }
 .btn {
     margin-top: 5px;
