@@ -2,6 +2,9 @@ var authController = require('../controllers/authcontroller.js');
 
 module.exports = function(app,passport){
 
+    app.get('/game', function(req, res){
+        res.render("game");
+      });
     app.get('/signup', authController.signup);
 
 
